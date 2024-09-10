@@ -91,7 +91,7 @@ header>img{
 }
 
 .content>label:first-child{
-    font-size: 30px;
+    font-size: 200%;
     font-weight: 200;
     color: #F86F03;
     position: relative;
@@ -99,7 +99,7 @@ header>img{
     left: 70px;
 }
 .content>label:nth-child(3){
-    font-size: 60px;
+    font-size: 400%;
     font-weight: bold;
     color: white;
     position: relative;
@@ -107,7 +107,7 @@ header>img{
     left: 70px;
 }
 .content>label:nth-child(5){
-    font-size: 35px;
+    font-size: 200%;
     font-weight: bold;
     color: white;
     position: relative;
