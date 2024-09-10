@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    background: #154360;
+}
+header{
+    width: 100vw;
+    height: 10vh;
+    position: relative;
+    border-bottom: 1px solid gray;
+    padding: 0;
+    top: -20px;
+}
+header>nav>ul>li{
+    list-style: none;
+    font-family: "Mukta", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    display: inline;
+    margin: 10px;
+    font-size: 25px
+}
+header>nav>ul{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header>h2{
+    width: 20%;
+    margin: 0;
+    position: relative;
+    top: 15px;
+    bottom: 0;
+    left: 10px;
+}
+header>img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    margin: auto;
+}
+.hero>section{
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.heroImage {
+    width: 30%;
+    height: 90%;
+    position: absolute;
+    top: -40px;
+    bottom: 0;
+    right: 70px;
+    margin: auto 0;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    transition: grid-template-columns 0.5s;
+}
+
+.image-01 {
+    background-image: url(../asset/images/image01.jpg);
+    background-size: cover;
+    background-position: bottom;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.image-02 {
+    background-image: url(../asset/images/image02.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.image-03 {
+    background-image: url(../asset/images/image03.jpg);
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.content>label:first-child{
+    font-size: 30px;
+    font-weight: 200;
+    color: #F86F03;
+    position: relative;
+    top: 50px;
+    left: 70px;
+}
+.content>label:nth-child(3){
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: 70px;
+    left: 70px;
+}
+.content>label:nth-child(5){
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: 70px;
+    left: 70px;
+}
+.social-links{
+    width: 230px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    position: relative;
+    top: 120px;
+    left: 200px;
+}
+.content>button{
+    width: 200px;
+    height: 50px;
+    background-color: #F86F03;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    top: 150px;
+    left: 210px;
+    font-size: 18px;
+}

@@ -11,73 +11,8 @@
     <<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body{
-            margin: 0;
-            overflow: hidden;
-            background: #154360;
-        }
-        header{
-            width: 100vw;
-            height: 10vh;
-            position: relative;
-            border-bottom: 1px solid gray;
-            padding: 0;
-            top: -20px;
-        }
-        header>nav>ul>li{
-            list-style: none;
-            font-family: "Mukta", sans-serif;
-            font-weight: bold;
-            font-style: normal;
-            display: inline;
-            margin: 10px;
-            font-size: 25px
-        }
-        header>nav>ul{
-            position: absolute;
-            bottom: 0;
-            top: 0;
-            margin: auto;
-            right: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        header>h2{
-            width: 20%;
-            margin: 0;
-            position: relative;
-            top: 15px;
-            bottom: 0;
-            left: 10px;
-        }
-        header>img{
-            width: 30px;
-            height: 30px;
-            position: absolute;
-            top: 0;
-            right: 10px;
-            bottom: 0;
-            margin: auto;
-        }
-        .hero>section{
-            position: relative;
-            width: 100vw;
-            height: 90vh;
-        }
-        .hero > section > img {
-            width: 350px;
-            height: 400px;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 70px;
-            margin: auto 0; /* Adjusted */
-            border-radius: 20px;
-        }
 
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <!--Header section -->
@@ -91,13 +26,79 @@
             <li>Contact</li>
         </ul>
     </nav>
-    <img src="assest/images/img.png" alt="logo" title="logo">
+    <img src="asset/images/img.png" alt="logo" title="logo">
 </header>
 
     <main class="hero">
         <section>
-            <img src="assest/images/Polish_20240726_204724165.jpg" alt="main picture">
+            <div class="content">
+                <label>Hi,It's me</label><br>
+                <label>Madusha Pullaperuma</label><br>
+                <label>And I'm a <span style="color: #F86F03">Frontend Developer</span></label><br>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/madusha.pullaperuma?mibextid=ZbWKwL" target="_blank">
+                        <div>
+                            <img src="asset/icon/facebook.png" alt="facebook">
+                        </div>
+                    </a>
+                    <a href="">
+                        <div>
+                            <img src="asset/icon/linkedin.png" alt="linkedin">
+                        </div>
+                    </a>
+                    <a href="https://github.com/madusha1225" target="_blank">
+                        <div>
+                            <img src="asset/icon/github.png" alt="github">
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/madusha_pullaperuma?igsh=bGp4Z3h4cG1rbG9y" target="_blank">
+                        <div>
+                            <img src="asset/icon/instagram.png" alt="instagram">
+                        </div>
+                    </a>
+                </div>
+                <button>Download CV</button>
+            </div>
+            <div class="heroImage">
+                <div class="image-01">
+                </div>
+                <div class="image-02">
+                </div>
+                <div class="image-03">
+                </div>
+            </div>
         </section>
     </main>
+
+<script>
+    const image1 = document.querySelector('.image-01');
+    const image2 = document.querySelector('.image-02');
+    const image3 = document.querySelector('.image-03');
+    const heroImage = document.querySelector('.heroImage');
+
+    image1.addEventListener('mouseover', function() {
+        heroImage.style.gridTemplateColumns = '3fr 1fr 1fr';
+    });
+
+    image1.addEventListener('mouseout', function() {
+        heroImage.style.gridTemplateColumns = '1fr 1fr 1fr';
+    });
+
+    image2.addEventListener('mouseover', function() {
+        heroImage.style.gridTemplateColumns = '1fr 3fr 1fr';
+    });
+
+    image2.addEventListener('mouseout', function() {
+        heroImage.style.gridTemplateColumns = '1fr 1fr 1fr';
+    });
+
+    image3.addEventListener('mouseover', function() {
+        heroImage.style.gridTemplateColumns = '1fr 1fr 3fr';
+    });
+
+    image3.addEventListener('mouseout', function() {
+        heroImage.style.gridTemplateColumns = '1fr 1fr 1fr';
+    });
+</script>
 </body>
 </html>
