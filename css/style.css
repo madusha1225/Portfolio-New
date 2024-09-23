@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     background: #154360;
 }
 header{
@@ -29,6 +29,7 @@ header>nav>ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 header>h2{
     width: 20%;
@@ -36,7 +37,8 @@ header>h2{
     position: relative;
     top: 15px;
     bottom: 0;
-    left: 10px;
+    left: 30px;
+    color: white;]
 }
 header>img{
     width: 30px;
@@ -134,4 +136,114 @@ header>img{
     top: 150px;
     left: 210px;
     font-size: 18px;
+}
+
+/* ---------- about section ---------- */
+
+.about{
+    width: 100vw;
+    height: 100vh;
+}
+
+.about>div:first-child{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    width: 15%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid white;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 30px;
+    margin: auto;
+}
+
+.about-content{
+    width: 90%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    position: relative;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.about-content p{
+    color: white;
+    font-size: 32px;
+}
+
+.about-content img{
+    width: 86%;
+}
+
+/* ---------- skill section ---------- */
+
+.skill{
+    width: 100vw;
+    height: 75vh;
+}
+
+.skill>div:first-child{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    width: 15%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid white;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 30px;
+    margin: auto;
+}
+
+.skill-section{
+    background-color: white;
+    width: 90%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    position: relative;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.skill-section>div{
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+}
+
+.skill-section>div>img{
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 20px;
+    margin: auto;
+}
+
+.skill-section>div>label{
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bolder;
 }
