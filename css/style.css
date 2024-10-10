@@ -182,6 +182,89 @@ header>img{
 
 .about-content img{
     width: 86%;
+    filter: grayscale(100%);
+}
+.about-content img:hover{
+    filter: grayscale(0%);
+}
+/* ---------- education section ---------- */
+
+.education{
+    width: 100vw;
+    height: 70vh;
+}
+
+.education>div:first-child{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    width: 15%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid white;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 30px;
+    margin: auto;
+}
+.education_card {
+    position: relative;
+    display: block;
+    width: 800px;
+    height: 350px;
+    margin: 80px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.4s;
+    box-shadow: 0px 0px 120px -25px rgb(28, 27, 26);
+    box-sizing: border-box;
+}
+.education_card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 80px -25px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s;
+}
+.education_card .info_section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-blend-mode: multiply;
+    z-index: 2;
+    border-radius: 10px;
+    background: linear-gradient(to right, #fffdfd 50%, transparent 100%);
+}
+.education_card .blur_back {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    right: 0;
+    background-size: cover;
+    border-radius: 11px;
+    width: 80%;
+    background-position: -100% 10% !important;
+}
+
+.background-ijse {
+    background: url("/asset/images/education_background.jpg");
+}
+.card_header{
+    position: relative;
+    left: 5%;
+}
+.header_image{
+
+}
+.card_header>h1{
+
+}
+.card_content{
+    position: relative;
+    left: 5%;
+    width: 60%;
 }
 
 /* ---------- skill section ---------- */
