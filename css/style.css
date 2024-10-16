@@ -5,11 +5,19 @@ body{
 }
 header{
     width: 100vw;
-    height: 10vh;
-    position: relative;
+    height: 8vh;
+    position: fixed;
     border-bottom: 1px solid gray;
     padding: 0;
-    top: -20px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    background-color: #F86F03;
+    transform: translateY(-6vh);
+    transition: 1s;
+}
+header:hover{
+    transform: none;
 }
 header>nav>ul>li{
     list-style: none;
@@ -20,6 +28,10 @@ header>nav>ul>li{
     margin: 10px;
     font-size: 25px
 }
+header a{
+    text-decoration: none;
+    color: white;
+}
 header>nav>ul{
     position: absolute;
     bottom: 0;
@@ -29,13 +41,11 @@ header>nav>ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
 }
 header>h2{
     width: 20%;
     margin: 0;
     position: relative;
-    top: 15px;
     bottom: 0;
     left: 30px;
     color: white;]
@@ -51,6 +61,7 @@ header>img{
 }
 .hero>section{
     position: relative;
+    top: 8vh;
     width: 100vw;
     height: 90vh;
     display: grid;
@@ -60,7 +71,7 @@ header>img{
     width: 30%;
     height: 90%;
     position: absolute;
-    top: -40px;
+    top: 0;
     bottom: 0;
     right: 70px;
     margin: auto 0;
@@ -108,6 +119,153 @@ header>img{
     top: 70px;
     left: 70px;
 }
+.key{
+    letter-spacing: -1vw;
+    transition: transform 0.2s;
+    display: inline-block;
+}
+@keyframes pressDown1 {
+    30%,
+    40%,
+    100% {
+        transform: translateY(0);
+    }
+    35% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes pressDown2 {
+    70%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes pressDown3 {
+    30%,
+    40%,
+    100% {
+        transform: translateY(0);
+    }
+    35% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes pressDown4 {
+    40%,
+    50%,
+    100% {
+        transform: translateY(0);
+    }
+    45% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes pressDown5 {
+    20%,
+    30%,
+    100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes pressDown6 {
+    60%,
+    70%,
+    100% {
+        transform: translateY(0);
+    }
+    65% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes pressDown7 {
+    10%,
+    20%,
+    100% {
+        transform: translateY(0);
+    }
+    15% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes pressDown8 {
+    35%,
+    45%,
+    100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(10px);
+    }
+}
+
+.key:nth-child(1) {
+    animation: pressDown1 2s infinite;
+}
+.key:nth-child(2) {
+    animation: pressDown2 3s infinite;
+}
+.key:nth-child(3) {
+    animation: pressDown3 4s infinite;
+}
+.key:nth-child(4) {
+    animation: pressDown4 2.5s infinite;
+}
+.key:nth-child(5) {
+    animation: pressDown5 2.5s infinite;
+}
+.key:nth-child(6) {
+    animation: pressDown6 3.5s infinite;
+}
+.key:nth-child(7) {
+    animation: pressDown7 2.2s infinite;
+}
+.key:nth-child(8) {
+    animation: pressDown8 3.2s infinite;
+}
+.key:nth-child(9) {
+    animation: pressDown1 2s infinite;
+}
+.key:nth-child(10) {
+    animation: pressDown2 3s infinite;
+}
+.key:nth-child(11) {
+    animation: pressDown3 4s infinite;
+}
+.key:nth-child(12) {
+    animation: pressDown4 2.5s infinite;
+}
+.key:nth-child(13) {
+    animation: pressDown5 2.5s infinite;
+}
+.key:nth-child(14) {
+    animation: pressDown6 3.5s infinite;
+}
+.key:nth-child(15) {
+    animation: pressDown7 2.2s infinite;
+}
+.key:nth-child(16) {
+    animation: pressDown8 3.2s infinite;
+}
+.key:nth-child(17) {
+    animation: pressDown1 2s infinite;
+}
+.key:nth-child(18) {
+    animation: pressDown2 3s infinite;
+}
 .content>label:nth-child(5){
     font-size: 2.5vw;
     font-weight: bold;
@@ -143,6 +301,8 @@ header>img{
 .about{
     width: 100vw;
     height: 100vh;
+    position: relative;
+    top: 8vh;
 }
 
 .about>div:first-child{
@@ -191,7 +351,9 @@ header>img{
 
 .education{
     width: 100vw;
-    height: 70vh;
+    height: 100vh;
+    position: relative;
+    top: 8vh;
 }
 
 .education>div:first-child{
@@ -213,8 +375,8 @@ header>img{
 .education_card {
     position: relative;
     display: block;
-    width: 800px;
-    height: 350px;
+    width: 80%;
+    height: 70%;
     margin: 80px auto;
     overflow: hidden;
     border-radius: 10px;
@@ -272,6 +434,8 @@ header>img{
 .skill{
     width: 100vw;
     height: 75vh;
+    position: relative;
+    top: 8vh;
 }
 
 .skill>div:first-child{
@@ -336,6 +500,8 @@ header>img{
 .project{
     width: 100vw;
     height: 100vh;
+    position: relative;
+    top: 0;
 }
 
 .project>div:first-child{
@@ -383,6 +549,235 @@ header>img{
     left: 50vw;
     border-radius: 20px;
     border: 4px solid #F86F03;
+    display: flex;
+    justify-content: center;
+}
+.project-1-content>label{
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+}
+.project-1-content>p{
+    width: 80%;
+    position: absolute;
+    top: 25%;
+}
+
+/* ---------- contact section ---------- */
+
+.assignment{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.assignment>div:first-child{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    width: 15%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid white;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 30px;
+    margin: auto;
+}
+.assignment-cards{
+    width: 90%;
+    height: 70%;
+    position: absolute;
+    top: 8%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3%;
+}
+.card{
+    background-color: white;
+    border-radius: 10px;
+    transition: 1s ease-out;
+    position: relative;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.back-img{
+    width: 90%;
+    height: 50%;
+    background-size: cover;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 10px;
+}
+.img-1{
+    background-image: url("/asset/images/css-transition.webp");
+    background-position: left;
+}
+.img-2{
+    background-image: url("/asset/images/animation.gif");
+    background-position: center;
+    background-color: #171717;
+}
+.img-3{
+    background-image: url("/asset/images/portfolio.webp");
+    background-position: center;
+}
+.img-4{
+    background-image: url("/asset/images/pos.jpg");
+    background-position: center;
+}
+.card>p:nth-child(2){
+    width: 80%;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.card-1>a:nth-child(3) , .card-2>a:nth-child(3){
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    top: 80%;
+    left: 10%;
+}
+.card-1>button:nth-child(4) , .card-2>button:nth-child(4){
+    width: 50%;
+    height: 9%;
+    position: absolute;
+    top: 87%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #F86F03;
+    border-radius: 10px;
+    border: none;
+}
+.card-3>a:nth-child(3){
+    width: 50%;
+    height: 9%;
+    position: absolute;
+    top: 85%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.card-3>a:nth-child(3)>button{
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid #F86F03;
+    border-radius: 10px;
+}
+.card-3>a:nth-child(3)>button:hover , .card-4>a:nth-child(3)>button:hover , .card-1-cases>div>a:nth-child(2)>button:hover , .card-2-cases>div>a:nth-child(2)>button:hover{
+    background-color: #F86F03;
+    color: white;
+    border: none;
+}
+.card-4>a{
+    width: 35%;
+    height: 9%;
+    position: absolute;
+    top: 85%;
+}
+.card-4>a:nth-child(3){
+    left: 10%;
+}
+.card-4>a:nth-child(4){
+    right: 10%;
+}
+.card-4>a>button{
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.card-4>a:nth-child(3)>button{
+    border: 2px solid #F86F03;
+}
+.card-4>a:nth-child(4)>button{
+    color: white;
+    background-color: #F86F03;
+    border: none;
+}
+.card-1-cases , .card-2-cases{
+    width: 30%;
+    height: 45%;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #154360;
+    border-radius: 10px;
+    border: 3px solid black;
+    padding: 0 0 20px 0;
+}
+.card-2-cases{
+    left: 28%;
+}
+.card-1-cases>div , .card-2-cases>div{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.card-1-cases>div>img , .card-2-cases>div>img{
+    position: absolute;
+    right: 5%;
+}
+.card-1-cases>div>label:nth-child(1) , .card-2-cases>div>label:nth-child(1){
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    left: 10%;
+    color: white;
+}
+.card-1-cases>div>a:nth-child(2) , .card-2-cases>div>a:nth-child(2){
+    width: 30%;
+    height: 70%;
+    position: absolute;
+    right: 45%;
+}
+.card-1-cases>div>a:nth-child(2)>button , .card-2-cases>div>a:nth-child(2)>button{
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid #F86F03;
+}
+.card-1-cases>div>a:nth-child(3) , .card-2-cases>div>a:nth-child(3){
+    width: 30%;
+    height: 70%;
+    position: absolute;
+    right: 10%;
+}
+.card-1-cases>div>a:nth-child(3)>button , .card-2-cases>div>a:nth-child(3)>button{
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #F86F03;
+    border: none;
+    color: white;
 }
 
 /* ---------- contact section ---------- */
@@ -391,6 +786,7 @@ header>img{
     width: 100vw;
     height: 70vh;
     position: relative;
+    top: 0;
 }
 
 .contact>div:first-child{
