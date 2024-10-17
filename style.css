@@ -867,7 +867,7 @@ header>img{
 }
 
 .send-email-details *::placeholder{
-    color : white;
+   color : white;
 }
 
 .email>input , .subject>input , .message>textarea , .btn-send{
@@ -899,3 +899,7 @@ header>img{
     font-weight: bold;
     font-size: 20px;
 }
+
+
+
+
