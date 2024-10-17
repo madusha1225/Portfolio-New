@@ -215,6 +215,8 @@
     }
     .about>div:first-child , .education>div:first-child , .skill>div:first-child , .project>div:first-child , .assignment>div:first-child , .contact>div:first-child{
         font-size: 25px;
+        height: 7%;
+        width: 35%;
     }
     .about-content p{
         font-size: 18px;
@@ -264,6 +266,8 @@
     }
     .card-1>button:nth-child(4) , .card-2>button:nth-child(4) , .card-4>a>button , .card-3>a:nth-child(3)>button , .card-1-cases>div>a:nth-child(2)>button , .card-2-cases>div>a:nth-child(2)>button , .card-1-cases>div>a:nth-child(3)>button , .card-2-cases>div>a:nth-child(3)>button , .card-1-cases>div>label:nth-child(1) , .card-2-cases>div>label:nth-child(1){
         font-size: 13px;
+        height: 6%;
+        width: 30%;
     }
     .contact{
         height: 100vh;
@@ -298,6 +302,7 @@
     }
     .about>div:first-child , .education>div:first-child , .skill>div:first-child , .project>div:first-child , .assignment>div:first-child , .contact>div:first-child{
         font-size: 22px;
+        height: 5%;
     }
     .about-content p{
         font-size: 15px;
@@ -345,5 +350,70 @@
 
 
 @media (max-width: 424.98px) {
-
+    .about-content p{
+        font-size: 12px;
+    }
+    .content>button {
+        left: 90px;
+        font-size: 12px;
+        width: 120px;
+        height: 30px;
+    }
+    .social-links{
+        left: 70px;
+    }
+    .card_header>h1 , .project-1-content>label{
+        font-size: 18px;
+    }
+    .text , .project-1-content>p{
+        font-size: 12px;
+    }
+    .skill-section>div>img{
+        width: 65px;
+        height: 65px;
+    }
+    .assignment{
+        height: 200vh;
+    }
+    .assignment-cards{
+        grid-template-columns: 1fr;
+        width: 80%;
+        top: 10%;
+        gap: 2%;
+        height: 90%;
+    }
+    .card-1>a:nth-child(3) , .card-2>a:nth-child(3){
+        top: 88%;
+    }
+    .card-1>button:nth-child(4) , .card-2>button:nth-child(4){
+        top: 87%;
+        width: 40%;
+        height: 10%;
+        right: 5%;
+        margin: 0;
+        left: auto;
+    }
+    .card-3>a:nth-child(3){
+        width: 50%;
+        height: 10%;
+    }
+    .card-1-cases , .card-2-cases{
+        width: 70%;
+        height: 20%;
+        top: 6%;
+        left: 10%;
+    }
+    .card-2-cases{
+        top: 29%;
+    }
+    .call-detail>img , .email-detail>img{
+        left: 15%;
+    }
+    .call-detail>a , .email-detail>a ,  .btn-send{
+        font-size: 12px;
+    }
+    .links-detail>a>img{
+        width: 25px;
+        height: 25px;
+    }
 }

@@ -674,8 +674,8 @@ header>img{
     margin: auto;
 }
 .card-3>a:nth-child(3)>button{
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
     font-size: 1rem;
     font-weight: bold;
     border: 2px solid #F86F03;
@@ -699,8 +699,8 @@ header>img{
     right: 10%;
 }
 .card-4>a>button{
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 10px;
@@ -752,8 +752,8 @@ header>img{
     right: 40%;
 }
 .card-1-cases>div>a:nth-child(2)>button , .card-2-cases>div>a:nth-child(2)>button{
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 10px;
@@ -766,8 +766,8 @@ header>img{
     right: 5%;
 }
 .card-1-cases>div>a:nth-child(3)>button , .card-2-cases>div>a:nth-child(3)>button{
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 10px;
