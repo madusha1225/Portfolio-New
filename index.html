@@ -18,7 +18,7 @@
 <body>
 <!--Header section -->
 <header>
-    <h2>MP</h2>
+    <a href="#"><h2>MP</h2></a>
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
@@ -29,9 +29,40 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+    <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div class="menu-div">
+        <div>
+            <img width="30" height="30" src="https://img.icons8.com/material-rounded/48/info.png" alt="info"/>
+            <a href="#about">About</a>
+        </div>
+        <div>
+            <img width="64" height="64" src="https://img.icons8.com/glyph-neue/64/education.png" alt="education"/>
+            <a href="#education">Education</a>
+        </div>
+        <div>
+            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/popular-woman.png" alt="popular-woman"/>
+            <a href="#skill">Skills</a>
+        </div>
+        <div>
+            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/group-of-projects.png" alt="group-of-projects"/>
+            <a href="#project">Projects</a>
+        </div>
+        <div>
+            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/signing-a-document.png" alt="signing-a-document"/>
+            <a href="#assignment">Assignments</a>
+        </div>
+        <div>
+            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/contact-card.png" alt="contact-card"/>
+            <a href="#contact">Contact</a>
+            </div>
+        </div>
 </header>
 
-    <main class="hero">
+    <main class="hero" id="hero">
         <section>
             <div class="content">
                 <label>Hi,It's me</label><br>
@@ -419,6 +450,17 @@
     card2CaseImg.addEventListener("click",function () {
         card2Cases.style.display = "none";
     });
+    function myFunction(x) {
+        x.classList.toggle("change");
+
+        var menuDiv = document.getElementsByClassName("menu-div")[0];
+
+        if (menuDiv.style.display === "grid") {
+            menuDiv.style.display = "none";
+        } else {
+            menuDiv.style.display = "grid";
+        }
+    }
 </script>
 </body>
 </html>
