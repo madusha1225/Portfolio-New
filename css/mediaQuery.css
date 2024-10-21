@@ -409,12 +409,13 @@
         width: 190px;
     }
     .hero{
-        height: 110vh;
+        height: 100vh;
     }
     .content{
         bottom: 50%;
     }
     .about{
+        top: 0;
         height: 80vh;
     }
     .about-content{
