@@ -385,7 +385,7 @@
     }
     .content-div-2{
         width: calc(100vw - 80px);
-        top: 65%;
+        top: calc(7% + 200px);
     }
     .card_header>h1{
         font-size: 20px;
@@ -467,14 +467,14 @@
     .about-img{
         width: 150px;
         height: 150px;
-        top: 5%;
+        top: 2%;
     }
     .content-div-1{
         width: calc(100vw - 200px);
     }
     .content-div-2{
         width: calc(100vw - 50px);
-        top: 60%;
+        top: calc(7% + 150px);
     }
     .content>button {
         font-size: 12px;
