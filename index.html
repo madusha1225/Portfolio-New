@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mediaQuery.css">
@@ -64,7 +65,7 @@
 
     <main class="hero" id="hero">
         <section>
-            <div class="content">
+            <div class="content" data-aos="fade-right">
                 <label>Hi,It's me</label><br>
                 <label>
                     <span class="key">M</span>
@@ -111,7 +112,7 @@
                 </div>
                 <button>Download CV</button>
             </div>
-            <div class="heroImage">
+            <div class="heroImage" data-aos="fade-left">
                 <div class="image-01">
                 </div>
                 <div class="image-02">
@@ -123,9 +124,9 @@
     </main>
 
     <main class="about" id="about">
-        <div>About&nbsp;<span style="color: #F86F03">Me</span></div>
+        <div data-aos="fade-up">About&nbsp;<span style="color: #F86F03">Me</span></div>
         <section class="about-content">
-            <div>
+            <div data-aos="fade-right">
                 <img src="./asset/images/about_image.jpg" alt="about image">
             </div>
             <div>
@@ -135,8 +136,8 @@
     </main>
 
     <main id="education" class="education">
-        <div>Educa<span style="color: #F86F03">tion</span></div>
-        <div class="education_card" id="tomb">
+        <div data-aos="fade-up">Educa<span style="color: #F86F03">tion</span></div>
+        <div class="education_card" id="tomb" data-aos="fade-up">
             <div class="info_section">
                 <div class="card_header">
                     <img class="header_image" src="asset/images/ijse.png"/>
@@ -154,8 +155,8 @@
     </main>
 
     <main class="skill" id="skill">
-        <div>My&nbsp;<span style="color: #F86F03">Skills</span></div>
-        <section class="skill-section">
+        <div data-aos="fade-up">My&nbsp;<span style="color: #F86F03">Skills</span></div>
+        <section class="skill-section" data-aos="fade-up">
             <div>
                 <img width="144" height="144" src="https://img.icons8.com/color/144/java-coffee-cup-logo--v1.png" alt="java-coffee-cup-logo--v1"/>
                 <label>Java</label>
@@ -184,11 +185,11 @@
     </main>
 
     <main class="project" id="project">
-        <div>Proje<span style="color: #F86F03">cts</span></div>
+        <div data-aos="fade-up">Proje<span style="color: #F86F03">cts</span></div>
         <section>
-            <div class="project-1-img"></div>
+            <div class="project-1-img" data-aos="fade-right"></div>
 <!--  methnt dnn content eka -->
-            <div class="project-1-content">
+            <div class="project-1-content" data-aos="fade-left">
                 <label>Food Shop Management System</label>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ea laboriosam nam officiis omnis quis voluptatum? Atque, deserunt ducimus, esse facilis incidunt ipsa neque qui quia similique soluta, tempore voluptatem.</p>
             </div>
@@ -196,28 +197,28 @@
     </main>
 
     <main class="assignment" id="assignment">
-        <div>Assign<span style="color: #F86F03">ments</span></div>
+        <div data-aos="fade-up">Assign<span style="color: #F86F03">ments</span></div>
         <section class="assignment-cards">
-            <div class="card card-1">
+            <div class="card card-1" data-aos="fade-right">
                 <div class="back-img img-1"></div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda distinctio hic incidunt necessitatibus numquam porro reiciendis rem veritatis voluptates.</p>
                 <a>Sample PDF</a>
                 <button id="card-1-view">View Cases</button>
             </div>
-            <div class="card card-2">
+            <div class="card card-2" data-aos="fade-right">
                 <div class="back-img img-2"></div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda distinctio hic incidunt necessitatibus numquam porro reiciendis rem veritatis voluptates.</p>
                 <a>Sample PDF</a>
                 <button id="card-2-view">View Cases</button>
             </div>
-            <div class="card card-3">
+            <div class="card card-3" data-aos="fade-left">
                 <div class="back-img img-3"></div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda distinctio hic incidunt necessitatibus numquam porro reiciendis rem veritatis voluptates.</p>
                 <a>
                     <button>Code</button>
                 </a>
             </div>
-            <div class="card card-4">
+            <div class="card card-4" data-aos="fade-left">
                 <div class="back-img img-4"></div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda distinctio hic incidunt necessitatibus numquam porro reiciendis rem veritatis voluptates.</p>
                 <a>
@@ -349,9 +350,9 @@
     </main>
 
     <main class="contact" id="contact">
-        <div>Cont<span style="color: #F86F03">act</span></div>
+        <div data-aos="fade-up">Cont<span style="color: #F86F03">act</span></div>
         <section class="contact-section">
-            <div class="send-email-details">
+            <div class="send-email-details" data-aos="fade-right">
                 <label class="email">
                     <input type="text" placeholder="Email Address">
                 </label><br>
@@ -363,7 +364,7 @@
                 </label>
                 <button class="btn-send">Send</button>
             </div>
-            <div class="social-details">
+            <div class="social-details" data-aos="fade-left">
                 <div class="call-detail">
                     <img src="asset/icon/call.png" alt="call-icon">
                     <a>+94 77 208 5732</a>
@@ -458,9 +459,13 @@
         if (menuDiv.style.display === "grid") {
             menuDiv.style.display = "none";
         } else {
-            menuDiv.style.display = "grid";
+            menuDiv.style.display = "grid";
         }
     }
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
 </script>
 </body>
 </html>

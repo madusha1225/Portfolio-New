@@ -129,6 +129,9 @@ header>img{
     bottom: 0;
     margin: auto;
 }
+.hero{
+    overflow: hidden;
+}
 .hero>section{
     position: relative;
     top: 8vh;
@@ -365,6 +368,7 @@ header>img{
     height: 100vh;
     position: relative;
     top: 8vh;
+    overflow: hidden;
 }
 
 .about>div:first-child{
@@ -417,6 +421,7 @@ header>img{
     height: 100vh;
     position: relative;
     top: 8vh;
+    overflow: hidden;
 }
 
 .education>div:first-child{
@@ -499,6 +504,7 @@ header>img{
     height: 75vh;
     position: relative;
     top: 8vh;
+    overflow: hidden;
 }
 
 .skill>div:first-child{
@@ -565,6 +571,7 @@ header>img{
     height: 100vh;
     position: relative;
     top: 0;
+    overflow: hidden;
 }
 
 .project>div:first-child{
@@ -634,6 +641,7 @@ header>img{
     width: 100vw;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 .assignment>div:first-child{
     color: white;
@@ -851,6 +859,7 @@ header>img{
     height: 70vh;
     position: relative;
     top: 0;
+    overflow: hidden;
 }
 
 .contact>div:first-child{
