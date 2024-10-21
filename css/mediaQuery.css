@@ -373,13 +373,16 @@
         font-size: 22px;
         height: 5%;
     }
+    .about{
+        height: 60vh;
+    }
     .about-content p{
         font-size: 15px;
     }
     .about-img{
         width: 200px;
         height: 200px;
-        top: 7%;
+        top: 5%;
     }
     .content-div-1{
         width: calc(100vw - 270px);
@@ -457,7 +460,7 @@
     }
     .about{
         top: 0;
-        height: 80vh;
+        height: 50vh;
     }
     .about-content{
         top: 60px;
