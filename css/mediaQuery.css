@@ -323,6 +323,9 @@
     .menu-div{
         width: 200px;
     }
+    .hero{
+        height: 90vh;
+    }
     .content{
         width: 100%;
     }
