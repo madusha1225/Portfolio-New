@@ -379,13 +379,14 @@
     .about-img{
         width: 200px;
         height: 200px;
+        top: 7%;
     }
     .content-div-1{
         width: calc(100vw - 270px);
     }
     .content-div-2{
         width: calc(100vw - 80px);
-        top: calc(7% + 200px);
+        top: calc(10% + 200px);
     }
     .card_header>h1{
         font-size: 20px;
@@ -467,7 +468,7 @@
     .about-img{
         width: 150px;
         height: 150px;
-        top: 2%;
+        top: 3%;
     }
     .content-div-1{
         width: calc(100vw - 200px);
