@@ -1,6 +1,17 @@
 @media (max-width: 1399.98px) {
     .about-content p{
-        font-size: 30px;
+        font-size: 25px;
+    }
+    .about-img{
+        width: 300px;
+        height: 300px;
+    }
+    .content-div-1{
+        width: calc(100vw - 500px);
+    }
+    .content-div-2{
+        width: calc(100vw - 500px);
+        top: 42%;
     }
     .call-detail>img , .email-detail>img{
         left: 10%;
@@ -112,7 +123,14 @@
         font-size: 30px;
     }
     .about-content p{
-        font-size: 20px;
+        font-size: 18px;
+    }
+    .content-div-1{
+        width: calc(100vw - 450px);
+    }
+    .content-div-2{
+        width: calc(100vw - 450px);
+        top: 42%;
     }
     .education_card {
         height: 60%;
@@ -226,11 +244,18 @@
         width: 35%;
     }
     .about-content p{
-        font-size: 18px;
+        font-size: 16px;
     }
-    .about-content img {
-        width: 90%;
-        height: 80%;
+    .about-img{
+        width: 250px;
+        height: 250px;
+    }
+    .content-div-1{
+        width: calc(100vw - 350px);
+    }
+    .content-div-2{
+        width: calc(100vw - 350px);
+        top: 45%;
     }
     .card_header>h1{
         font-size: 25px;
@@ -351,6 +376,17 @@
     .about-content p{
         font-size: 15px;
     }
+    .about-img{
+        width: 200px;
+        height: 200px;
+    }
+    .content-div-1{
+        width: calc(100vw - 270px);
+    }
+    .content-div-2{
+        width: calc(100vw - 80px);
+        top: 65%;
+    }
     .card_header>h1{
         font-size: 20px;
     }
@@ -427,6 +463,18 @@
     }
     .about-content p{
         font-size: 12px;
+    }
+    .about-img{
+        width: 150px;
+        height: 150px;
+        top: 5%;
+    }
+    .content-div-1{
+        width: calc(100vw - 200px);
+    }
+    .content-div-2{
+        width: calc(100vw - 50px);
+        top: 60%;
     }
     .content>button {
         font-size: 12px;
