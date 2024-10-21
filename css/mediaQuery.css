@@ -325,6 +325,7 @@
     }
     .hero{
         height: 90vh;
+        overflow: hidden;
     }
     .content{
         width: 100%;
