@@ -135,13 +135,14 @@ header>img{
     margin: auto;
 }
 .hero{
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .hero>section{
     position: relative;
     top: 8vh;
     width: 100vw;
-    height: 90vh;
+    max-height: 120vh;
+    min-height: 92vh;
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
