@@ -71,6 +71,10 @@
     .project-1-img {
         width: 55vw;
     }
+    .project-1-content>p {
+        height: 40%;
+        top: 30%;
+    }
     .assignment{
         height: 120vh;
     }
@@ -406,6 +410,9 @@
     .project-1-content>p{
         font-size: 13px;
     }
+    .view-project>label {
+        font-size: 1.2rem;
+    }
     .card-1>a:nth-child(3) , .card-2>a:nth-child(3){
         font-size: 13px;
     }
@@ -500,6 +507,9 @@
     .skill-section>div>img{
         width: 65px;
         height: 65px;
+    }
+    .view-project>label {
+        font-size: 1rem;
     }
     .assignment{
         height: 200vh;

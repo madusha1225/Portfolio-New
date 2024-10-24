@@ -20,7 +20,7 @@
 <body>
 <!--Header section -->
 <header>
-    <a href="#"><h2>MP</h2></a>
+    <h2 onclick="slowScrollToTop(2000)">MP</h2>
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
@@ -128,10 +128,10 @@
         <div data-aos="fade-up">About&nbsp;<span style="color: #F86F03">Me</span></div>
         <section class="about-content">
             <div data-aos="fade-right" class="about-img"></div>
-            <div class="content-div-1">
+            <div class="content-div-1" data-aos="fade-down">
                 <p>Hey there!<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello! I'm Madusha Pullaperuma, a 21-year-old software engineering student with a passion for technology and innovation. I enjoy watching movies, driving cars, and spending quality time with my family.</p>
             </div>
-            <div class="content-div-2">
+            <div class="content-div-2" data-aos="fade-up">
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My journey in software engineering has equipped me with skills in various programming languages and technologies, and I am constantly striving to learn and grow in this ever-evolving field. Welcome to my portfolio, where you can explore my projects and learn more about my journey and aspirations.</p>
             </div>
         </section>
@@ -194,6 +194,11 @@
             <div class="project-1-content" data-aos="fade-left">
                 <label>Food Shop Management System</label>
                 <p>A Food Shop Management System is a software solution designed to streamline the operations of a food shop or restaurant. It helps manage inventory, track sales, handle customer orders, process payments, and generate reports. The system typically includes features like order management, menu customization, staff management, and real-time analytics, making it easier to improve efficiency, reduce waste, and enhance customer satisfaction.</p>
+                <div class="view-project">
+                    <label>View Project</label>&nbsp;&nbsp;
+                    <img width="48" height="48" src="https://img.icons8.com/sf-regular/48/long-arrow-right.png" alt="long-arrow-right"/>&nbsp;&nbsp;
+                    <a href="https://github.com/madusha1225/Meal_Master_Canteen.git" target="_blank"><img width="24" height="24" src="https://img.icons8.com/material-sharp/24/github.png" alt="github"/></a>
+                </div>
             </div>
         </section>
     </main>
@@ -463,6 +468,24 @@
         } else {
             menuDiv.style.display = "grid";
         }
+    }
+    function slowScrollToTop(duration) {
+        const startPosition = window.pageYOffset;
+        const startTime = performance.now();
+
+        function scrollStep(currentTime) {
+            const elapsedTime = currentTime - startTime;
+            const progress = Math.min(elapsedTime / duration, 1); // Ensure progress does not exceed 1
+            const scrollY = startPosition * (1 - progress); // Gradually decrease the scroll position
+
+            window.scrollTo(0, scrollY);
+
+            if (progress < 1) {
+                requestAnimationFrame(scrollStep); // Continue scrolling
+            }
+        }
+
+        requestAnimationFrame(scrollStep);
     }
 </script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
