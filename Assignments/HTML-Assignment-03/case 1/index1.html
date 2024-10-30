@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CASE 1</title>
+    <link rel="stylesheet" href="assest/normalize.css">
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    section {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+    .out {
+        position: absolute;
+        width: 50vw;
+        height: 50vh;
+
+        border: 1px solid black;
+    }
+    .inn {
+        background-color: white;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+    .inner {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    .midsqr {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+    .tl {
+        top: 0;
+        left: 0;
+        background-color: red;
+    }
+    .tr {
+        top: 0;
+        right: 0;
+        background-color: green;
+    }
+    .br {
+        bottom: 0;
+        right: 0;
+        background-color: pink;
+    }
+    .bl {
+        bottom: 0;
+        left: 0;
+        background-color: yellow;
+    }
+
+    .cir {
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        position: absolute;
+    }
+    .c1 {
+        border-radius: 0 0 100% 0;
+    }
+    .c2 {
+        top: 0;
+        right: 0;
+        border-radius: 0 0 0 100%;
+    }
+    .c3 {
+        bottom: 0;
+        right: 0;
+        border-radius:  100% 0 0 0;
+    }
+    .c4 {
+        bottom: 0;
+        left: 0;
+        border-radius: 0  100% 0  0;
+    }
+    .c5 {
+        width: 200px;
+        height: 100px; /* add this to set the height */
+        border-radius: 0 0 200px 200px; /* modify this to make it a half circle */
+        top: 0;
+        right: 42%;
+        background-color: rgb(255, 255, 255);
+    }
+    .c6 {
+        width: 200px;
+        height: 100px; /* add this to set the height */
+        border-radius: 200px 200px 0 0; /* modify this to make it a half circle */
+        bottom: 0;
+        right: 42%;
+        background-color: rgb(255, 255, 255);
+    }
+    </style>
+</head>
+<body>
+<section>
+    <div class="out tl">
+        <div class="inn">
+            <div class="inner"></div>
+        </div>
+    </div>
+    <div class="out tr">
+        <div class="inn">
+            <div class="inner"></div>
+        </div>
+    </div>
+    <div class="out br">
+        <div class="inn">
+            <div class="inner"></div>
+        </div>
+    </div>
+    <div class="out bl">
+        <div class="inn">
+            <div class="inner"></div>
+        </div>
+    </div>
+    <div class="midsqr">
+        <div class="inner"></div>
+    </div>
+    <div class="cir c1"></div>
+    <div class="cir c2"></div>
+    <div class="cir c3"></div>
+    <div class="cir c4"></div>
+    <div class="cir c5"></div>
+    <div class="cir c6"></div>
+</section>
+</body>
+</html>
