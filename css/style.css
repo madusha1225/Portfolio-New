@@ -358,7 +358,7 @@ header>img{
 .social-links>a:hover{
     transform: scale(1.2);
 }
-.content>button{
+.content>a>button{
     width: 200px;
     height: 50px;
     background-color: #F86F03;

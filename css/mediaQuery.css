@@ -51,7 +51,7 @@
         left: 150px;
         top: 170px;
     }
-    .content>button {
+    .content>a>button {
         width: 150px;
         left: 185px;
         top: 200px;
@@ -119,7 +119,7 @@
         height: 40px;
         left: 110px;
     }
-    .content>button {
+    .content>a>button {
         height: 40px;
         left: 135px;
     }
@@ -233,7 +233,7 @@
         width: 40px;
         height: 40px;
     }
-    .content>button {
+    .content>a>button {
         height: 30px;
         font-size: 16px;
         top: 300px;
@@ -370,7 +370,7 @@
         width: 35px;
         height: 35px;
     }
-    .content>button {
+    .content>a>button {
         top: 260px;
     }
     .about>div:first-child , .education>div:first-child , .skill>div:first-child , .project>div:first-child , .assignment>div:first-child , .contact>div:first-child{
@@ -487,7 +487,7 @@
         width: calc(100vw - 50px);
         top: calc(7% + 150px);
     }
-    .content>button {
+    .content>a>button {
         font-size: 12px;
         width: 120px;
         height: 30px;
