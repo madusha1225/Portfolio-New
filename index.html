@@ -13,9 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mediaQuery.css">
+    <script src="emailScript.js"></script>
 </head>
 <body>
 <!--Header section -->
@@ -361,15 +361,15 @@
         <section class="contact-section">
             <div class="send-email-details" data-aos="fade-right">
                 <label class="email">
-                    <input type="text" placeholder="Email Address">
+                    <input type="text" id="emailAddress" placeholder="Email Address">
                 </label><br>
                 <label class="subject">
-                    <input type="text" placeholder="Subject">
+                    <input type="text" id="subject" placeholder="Subject">
                 </label><br>
                 <label class="message">
-                    <textarea placeholder="Your Message"></textarea>
+                    <textarea id="message" placeholder="Your Message"></textarea>
                 </label>
-                <button class="btn-send">Send</button>
+                <button class="btn-send" onclick="SendMail()">Send</button>
             </div>
             <div class="social-details" data-aos="fade-left">
                 <div class="call-detail">
@@ -491,6 +491,16 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
+</script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "5U5EppERnFKmg9Cfj",
+        });
+    })();
 </script>
 </body>
 </html>
