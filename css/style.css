@@ -719,7 +719,6 @@ header>img{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 3%;
-    background-color: #05abe0;
 }
 #assignment-cards-2{
     display: none;
