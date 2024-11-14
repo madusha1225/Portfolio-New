@@ -207,7 +207,7 @@
 
     <main class="assignment" id="assignment">
         <div data-aos="fade-up">Assign<span style="color: #F86F03">ments</span></div>
-        <section class="assignment-cards">
+        <section class="assignment-cards" id="assignment-cards-1">
             <div class="card card-1" data-aos="fade-right">
                 <div class="back-img img-1"></div>
                 <p>A CSS Transitions Assignment teaches how to create smooth changes in CSS properties, like color or size, during user interactions.</p>
@@ -238,6 +238,42 @@
                 </a>
             </div>
         </section>
+        <section class="assignment-cards" id="assignment-cards-2">
+            <div class="card card-4" data-aos="fade-down-right">
+                <div class="back-img img-4"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi deserunt error et</p>
+                <a href="https://github.com/harsha200210/Calculator.git" target="_blank">
+                    <button>Code</button>
+                </a>
+                <a href="assignment/Calculator/index.html" target="_blank">
+                    <button>Demo</button>
+                </a>
+            </div>
+            <div class="card card-4" data-aos="fade-down-left">
+                <div class="back-img img-4"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi deserunt error et</p>
+                <a href="https://github.com/harsha200210/Assignment_09.git" target="_blank">
+                    <button>Code</button>
+                </a>
+                <a href="assignment/DOM%20Manupulation/index.html" target="_blank">
+                    <button>Demo</button>
+                </a>
+            </div>
+            <div class="card card-2" data-aos="fade-down-left">
+                <div class="back-img img-4"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi deserunt error et</p>
+                <a href="pdf/08.pdf" target="_blank">
+                    Sample PDF
+                </a>
+                <button id="card-7-view">View Cases</button>
+            </div>
+            <div class="card" data-aos="fade-up-left" hidden>
+            </div>
+        </section>
+        <div class="button-nav" data-aos="fade-right">
+            <button id="previous-btn">Previous</button>
+            <button id="next-btn">Next</button>
+        </div>
         <div class="card-1-cases" id="card-1-cases">
             <div>
                 <img src="asset/icon/close.png" id="card-1-case-img">
@@ -356,6 +392,29 @@
                 </a>
             </div>
         </div>
+        <div class="card-7-cases" id="card-7-cases">
+            <div>
+                <img src="asset/icon/close.png" id="card-7-case-img">
+            </div>
+            <div>
+                <label>Case 01</label>
+                <a href="https://github.com/madusha1225/Assignment-04/blob/main/case%2006/index.html" target="_blank">
+                    <button>Code</button>
+                </a>
+                <a href="Assignments/Assignment_04/case%2006/index.html" target="_blank">
+                    <button>Demo</button>
+                </a>
+            </div>
+            <div>
+                <label>Case 02</label>
+                <a href="https://github.com/madusha1225/Assignment-04/blob/main/case%2006/index.html" target="_blank">
+                    <button>Code</button>
+                </a>
+                <a href="Assignments/Assignment_04/case%2006/index.html" target="_blank">
+                    <button>Demo</button>
+                </a>
+            </div>
+        </div>
     </main>
 
     <main class="contact" id="contact">
@@ -436,30 +495,7 @@
         heroImage.style.gridTemplateColumns = '1fr 1fr 1fr';
     });
 
-    var card1View = document.getElementById("card-1-view");
-    var card2View = document.getElementById("card-2-view");
-    var card1CaseImg = document.getElementById("card-1-case-img");
-    var card2CaseImg = document.getElementById("card-2-case-img");
-    var card1Cases = document.getElementById("card-1-cases");
-    var card2Cases = document.getElementById("card-2-cases");
 
-    card1Cases.style.display = "none";
-    card2Cases.style.display = "none";
-
-    card1View.addEventListener("click",function () {
-        card1Cases.style.display = "grid";
-        card2Cases.style.display = "none";
-    });
-    card2View.addEventListener("click",function () {
-        card2Cases.style.display = "grid";
-        card1Cases.style.display = "none";
-    });
-    card1CaseImg.addEventListener("click",function () {
-        card1Cases.style.display = "none";
-    });
-    card2CaseImg.addEventListener("click",function () {
-        card2Cases.style.display = "none";
-    });
     function myFunction(x) {
         x.classList.toggle("change");
 
@@ -489,6 +525,74 @@
 
         requestAnimationFrame(scrollStep);
     }
+
+    // assignment navigation
+    document.addEventListener("DOMContentLoaded", function () {
+        let btn_previous = document.getElementById("previous-btn");
+        let btn_next = document.getElementById("next-btn");
+        let assignment_card_1 = document.getElementById("assignment-cards-1");
+        let assignment_card_2 = document.getElementById("assignment-cards-2");
+
+        // Initial state
+        btn_previous.style.display = "none";
+        assignment_card_2.style.display = "none";
+
+        // Next button click event
+        btn_next.addEventListener("click", function () {
+            assignment_card_1.style.display = "none";
+            assignment_card_2.style.display = "grid";
+            btn_previous.style.display = "block";
+            btn_next.style.display = "none";
+        });
+
+        // Previous button click event
+        btn_previous.addEventListener("click", function () {
+            assignment_card_2.style.display = "none";
+            assignment_card_1.style.display = "grid";
+            btn_next.style.display = "block";
+            btn_previous.style.display = "none";
+        });
+
+        var card1View = document.getElementById("card-1-view");
+        var card2View = document.getElementById("card-2-view");
+        var card7View = document.getElementById("card-7-view");
+        var card1CaseImg = document.getElementById("card-1-case-img");
+        var card2CaseImg = document.getElementById("card-2-case-img");
+        var card7CaseImg = document.getElementById("card-7-case-img");
+        var card1Cases = document.getElementById("card-1-cases");
+        var card2Cases = document.getElementById("card-2-cases");
+        var card7Cases = document.getElementById("card-7-cases");
+
+        card1Cases.style.display = "none";
+        card2Cases.style.display = "none";
+        card7Cases.style.display = "none";
+
+        card1View.addEventListener("click",function () {
+            card1Cases.style.display = "grid";
+            card2Cases.style.display = "none";
+            card7Cases.style.display = "none";
+        });
+        card2View.addEventListener("click",function () {
+            card2Cases.style.display = "grid";
+            card1Cases.style.display = "none";
+            card7Cases.style.display = "none";
+        });
+        card7View.addEventListener("click",function () {
+            card2Cases.style.display = "none";
+            card1Cases.style.display = "none";
+            card7Cases.style.display = "grid";
+        });
+        card1CaseImg.addEventListener("click",function () {
+            card1Cases.style.display = "none";
+        });
+        card2CaseImg.addEventListener("click",function () {
+            card2Cases.style.display = "none";
+        });
+        card7CaseImg.addEventListener("click",function () {
+            card7Cases.style.display = "none";
+        });
+    });
+
 </script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>

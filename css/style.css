@@ -719,6 +719,28 @@ header>img{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 3%;
+    background-color: #05abe0;
+}
+#assignment-cards-2{
+    display: none;
+}
+.button-nav{
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-nav>button{
+    width: 120px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: "Droid Sans", serif;
+    position: absolute;
 }
 .card{
     background-color: white;
@@ -837,7 +859,7 @@ header>img{
     background-color: #F86F03;
     border: none;
 }
-.card-1-cases , .card-2-cases{
+.card-1-cases , .card-2-cases, .card-7-cases{
     width: 30%;
     height: 45%;
     position: absolute;
@@ -850,32 +872,38 @@ header>img{
     border: 3px solid black;
     padding: 0 0 20px 0;
 }
+.card-7-cases{
+    height: 20%;
+    left: 50%;
+    top: 55%;
+}
+
 .card-2-cases{
     left: 28%;
 }
-.card-1-cases>div , .card-2-cases>div{
+.card-1-cases>div , .card-2-cases>div , .card-7-cases>div{
     display: flex;
     align-items: center;
     position: relative;
 }
-.card-1-cases>div>img , .card-2-cases>div>img{
+.card-1-cases>div>img , .card-2-cases>div>img , .card-7-cases>div>img{
     position: absolute;
     right: 5%;
 }
-.card-1-cases>div>label:nth-child(1) , .card-2-cases>div>label:nth-child(1){
+.card-1-cases>div>label:nth-child(1) , .card-2-cases>div>label:nth-child(1) , .card-7-cases>div>label:nth-child(1){
     font-size: 20px;
     font-weight: bold;
     position: absolute;
     left: 5%;
     color: white;
 }
-.card-1-cases>div>a:nth-child(2) , .card-2-cases>div>a:nth-child(2){
+.card-1-cases>div>a:nth-child(2) , .card-2-cases>div>a:nth-child(2) , .card-7-cases>div>a:nth-child(2){
     width: 30%;
     height: 70%;
     position: absolute;
     right: 40%;
 }
-.card-1-cases>div>a:nth-child(2)>button , .card-2-cases>div>a:nth-child(2)>button{
+.card-1-cases>div>a:nth-child(2)>button , .card-2-cases>div>a:nth-child(2)>button , .card-7-cases>div>a:nth-child(2)>button{
     width: 100% !important;
     height: 100% !important;
     font-size: 1rem;
@@ -883,13 +911,13 @@ header>img{
     border-radius: 10px;
     border: 2px solid #F86F03;
 }
-.card-1-cases>div>a:nth-child(3) , .card-2-cases>div>a:nth-child(3){
+.card-1-cases>div>a:nth-child(3) , .card-2-cases>div>a:nth-child(3) , .card-7-cases>div>a:nth-child(3){
     width: 30%;
     height: 70%;
     position: absolute;
     right: 5%;
 }
-.card-1-cases>div>a:nth-child(3)>button , .card-2-cases>div>a:nth-child(3)>button{
+.card-1-cases>div>a:nth-child(3)>button , .card-2-cases>div>a:nth-child(3)>button , .card-7-cases>div>a:nth-child(3)>button{
     width: 100% !important;
     height: 100% !important;
     font-size: 1rem;

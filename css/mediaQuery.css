@@ -16,7 +16,7 @@
     .call-detail>img , .email-detail>img{
         left: 10%;
     }
-    .card-1-cases>div>label:nth-child(1) , .card-2-cases>div>label:nth-child(1) {
+    .card-1-cases>div>label:nth-child(1) , .card-2-cases>div>label:nth-child(1) , .card-7-cases>div>label:nth-child(1) {
         font-size: 18px;
     }
     .skill-section>div>label{
@@ -76,12 +76,15 @@
         top: 30%;
     }
     .assignment{
-        height: 120vh;
+        height: 130vh;
     }
     .assignment-cards{
         grid-template-columns: repeat(2 , 1fr);
-        height: 80%;
-        top: 15%;
+        height: 75%;
+        top: 10%;
+    }
+    .button-nav{
+        bottom: 3%;
     }
     .card-1-cases{
         width: 40%;
@@ -93,6 +96,12 @@
         height: 30%;
         top: 16%;
         left: 50%;
+    }
+    .card-7-cases{
+        width: 40%;
+        height: 15%;
+        left: 5%;
+        top: 70%;
     }
     .img-4{
         background-position: top;
@@ -163,8 +172,16 @@
         height: 130vh;
     }
     .assignment-cards{
-        top: 15%;
-        height: 83%;
+        top: 10%;
+        height: 80%;
+    }
+    .button-nav{
+        bottom: 2%;
+    }
+    .button-nav>button {
+        width: 100px;
+        height: 30px;
+        font-size: 15px;
     }
     .card>p:nth-child(2){
         font-size: 14px;
@@ -300,10 +317,14 @@
     .card-4>a , .card-3>a:nth-child(3){
         top: 88%;
     }
-    .card-1>button:nth-child(4) , .card-2>button:nth-child(4) , .card-4>a>button , .card-3>a:nth-child(3)>button , .card-1-cases>div>a:nth-child(2)>button , .card-2-cases>div>a:nth-child(2)>button , .card-1-cases>div>a:nth-child(3)>button , .card-2-cases>div>a:nth-child(3)>button , .card-1-cases>div>label:nth-child(1) , .card-2-cases>div>label:nth-child(1){
+    .card-1>button:nth-child(4) , .card-2>button:nth-child(4) , .card-4>a>button , .card-3>a:nth-child(3)>button , .card-1-cases>div>a:nth-child(2)>button , .card-2-cases>div>a:nth-child(2)>button , .card-1-cases>div>a:nth-child(3)>button , .card-2-cases>div>a:nth-child(3)>button , .card-1-cases>div>label:nth-child(1) , .card-2-cases>div>label:nth-child(1) , .card-7-cases>div>label:nth-child(1) , .card-7-cases>div>a:nth-child(3)>button , .card-7-cases>div>a:nth-child(2)>button{
         font-size: 13px;
-        height: 6%;
-        width: 30%;
+        height: 8%;
+        width: 35%;
+    }
+    .card-7-cases{
+        height: 12%;
+        top: 75%;
     }
     .contact{
         height: 100vh;
@@ -419,12 +440,16 @@
     .card>p:nth-child(2){
         font-size: 11px;
     }
-    .card-1>button:nth-child(4) , .card-2>button:nth-child(4) , .card-4>a>button , .card-3>a:nth-child(3)>button , .card-1-cases>div>a:nth-child(2)>button , .card-2-cases>div>a:nth-child(2)>button , .card-1-cases>div>a:nth-child(3)>button , .card-2-cases>div>a:nth-child(3)>button , .card-1-cases>div>label:nth-child(1) , .card-2-cases>div>label:nth-child(1){
+    .card-1>button:nth-child(4) , .card-2>button:nth-child(4) , .card-4>a>button , .card-3>a:nth-child(3)>button , .card-1-cases>div>a:nth-child(2)>button , .card-2-cases>div>a:nth-child(2)>button , .card-1-cases>div>a:nth-child(3)>button , .card-2-cases>div>a:nth-child(3)>button , .card-1-cases>div>label:nth-child(1) , .card-2-cases>div>label:nth-child(1) ,  .card-7-cases>div>label:nth-child(1) , .card-7-cases>div>a:nth-child(3)>button , .card-7-cases>div>a:nth-child(2)>button{
         font-size: 11px;
     }
-    .card-1-cases>div>img , .card-2-cases>div>img{
+    .card-1-cases>div>img , .card-2-cases>div>img , .card-7-cases>div>img{
         width: 20px;
         height: 20px;
+    }
+    .card-7-cases{
+        height: 10%;
+        top: 78%;
     }
     .call-detail>img , .email-detail>img{
         width: 20px;
@@ -517,9 +542,9 @@
     .assignment-cards{
         grid-template-columns: 1fr;
         width: 80%;
-        top: 10%;
+        top: 5%;
         gap: 2%;
-        height: 90%;
+        height: 85%;
     }
     .card-1>a:nth-child(3) , .card-2>a:nth-child(3){
         top: 88%;
@@ -541,6 +566,12 @@
         height: 20%;
         top: 6%;
         left: 10%;
+    }
+    .card-7-cases{
+        width: 70%;
+        height: 10%;
+        left: 10%;
+        top: 78%;
     }
     .card-2-cases{
         top: 29%;
